@@ -7,4 +7,5 @@ MarkDoc no está vinculado direcamente al código, de forma que puedes escribir 
 - Cualquier texto puede ser formateado con Markdown
 - Documentación de cualquier parte del código en cualquier posición
 - Control de generación de la salida (ficheros, secciones y subsecciones)
+- Helpers para acciones comunes como documentación de métodos
 - Integración con grunt
