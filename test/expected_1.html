@@ -1,0 +1,53 @@
+<h1>My Awesome Page Documentation</h1>
+
+<h2>Introduction</h2>
+<p>This is a small test of how to create a new page and section. If you are
+a developer, then you should know that the entire application code is
+inside the global namespace <code>window.app</code></p>
+
+<h2>Cache module</h2>
+<p>Module to handle different kind of caches in the client-side. All the logic
+is wrapped in the `app.cache` namespace.</p>
+
+<h3>Static methods</h3>
+<h4>get(url, params)</h4>
+<table>
+    <thead>
+        <tr>
+            <td>Type</td>
+            <td>Name</td>
+            <td>Description</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>String</td>
+            <td>url</td>
+            <td>The relative url</td>
+        </tr>
+        <tr>
+            <td>JSON</td>
+            <td>params</td>
+            <td>JSON object to configure the request behaviour</td>
+        </tr>
+        <tr>
+            <td>Function</td>
+            <td>params.success</td>
+            <td>Callback to execute with the successful response from the server</td>
+        </tr>
+        <tr>
+            <td>Function</td>
+            <td>params.fail</td>
+            <td>Callback to execute when the request fails</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>It sends a GET request to the the server via AJAX</p>
+<p><strong>example</strong></pa>
+<blockquote>
+    app.xhr.get('/users.json', {
+    success: function(res) { console.log(res); },
+    fail: function() { console.log('Error!') }
+  })
+ </blockquote>
