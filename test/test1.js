@@ -11,16 +11,16 @@
 var app = {}
 
 /**
- * @md_section: main.cache
+ * @md_section: main.xhr
  * @md_begin
   ##Cache module
   Module to handle different kind of caches in the client-side. All the logic
-  is wrapped in the `app.cache` namespace.
+  is wrapped in the `app.xhr` namespace.
  */
 app.xhr = function(){
 
   /**
-   * @md_section: main.cache
+   * @md_section: main.xhr
    * @method get, static: true
    * @param String url: the relative url
    * @param JSON params: JSON object to configure the request behaviour
